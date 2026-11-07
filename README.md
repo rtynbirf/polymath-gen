@@ -1,5 +1,8 @@
 # ПОЛИМАТ-ГЕН 🧠→🎨→👁→✨
 
+<p align="center"><img src=".github/social-preview.png" alt="polymath-gen" width="100%"></p>
+
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Python](https://img.shields.io/badge/python-3.9%2B-blue)](pyproject.toml) [![Tests](https://img.shields.io/badge/tests-9%2F9%20PASS-brightgreen)](tests/) [![Backends](https://img.shields.io/badge/backends-zai%20%C2%B7%20comfy%20%C2%B7%20a1111%20%C2%B7%20ffmpeg-6C3BFF)](polymath_gen/backends/) [![Evolution](https://img.shields.io/badge/self%20learning-evolve.py-FF8C3B)](polymath_gen/evolve.py)
 
 **Автономный медиа-агент**: человек ставит задание текстом (по-русски) —
