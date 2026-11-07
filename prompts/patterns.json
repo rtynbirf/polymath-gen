@@ -8,6 +8,22 @@
       "Midjourney community best practices (конкретика, свет, --no негативы)",
       "SDXL/FLUX + ComfyUI community (negative-библиотеки, cfg/steps)",
       "Terraprompt/awesome-prompt-art своды 2024-2025"
+    ],
+    "last_evolution": "2026-11-07",
+    "evolution_log": [
+      {
+        "date": "2026-11-07",
+        "steps_analyzed": 7,
+        "avg_score": 6.83,
+        "added": [
+          "dominant_color_rule",
+          "atmospheric_layering",
+          "reflection_quality_specification"
+        ],
+        "insights": [
+          "Низкие оценки связаны с несоответствием освещения, недостаточной детализацией отражений и тумана, а также нежелательными элементами интерфейса; высокие оценки достигаются при использовании доминирующих цветовых акцентов и тщательной проработки атмосферы"
+        ]
+      }
     ]
   },
   "patterns": [
@@ -61,6 +77,21 @@
       "id": "light_language",
       "when": "атмосфера",
       "template": "golden hour | blue hour | volumetric god rays | neon rim light | softbox | hard chiaroscuro | candle light | moonlight"
+    },
+    {
+      "id": "dominant_color_rule",
+      "when": "когда требуется создать атмосферную сцену с определённым цветовым акцентом",
+      "rule": "Использовать дескрипторы 'dominant [color] lighting' и 'entire scene bathed in [color] glow' для создания единой цветовой атмосферы"
+    },
+    {
+      "id": "atmospheric_layering",
+      "when": "при описании сцен с атмосферными эффектами (туман, дымка, пар)",
+      "rule": "Указывать распределение атмосферы по объёму ('subtle thin haze ambient fog floating throughout the scene') вместо локализованных эффектов"
+    },
+    {
+      "id": "reflection_quality_specification",
+      "when": "при описании отражающих поверхностей",
+      "rule": "Чётко указывать тип отражения ('mirror-like reflections', 'crisp mirror floor') и избегать противоречий между цветом источника и отражения"
     }
   ]
 }

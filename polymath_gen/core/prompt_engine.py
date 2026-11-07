@@ -130,6 +130,18 @@ class PromptEngine:
  "variants": ["<короткий альтернативный вариант промпта 1>", "<вариант 2>"],
  "notes": "<1 предложение на русском: почему так составлено>"}"""
 
+    def _evolved_rules(self) -> str:
+        """Правила, выведенные эволюцией из памяти прогонов (prompts/patterns.json)."""
+        rules = []
+        try:
+            data = load_patterns()
+            for p in data.get("patterns", []):
+                if p.get("rule"):
+                    rules.append(f"- {p['when']}: {p['rule']}")
+        except Exception:
+            pass
+        return ("\nПРАВИЛА ИЗ ПАМЯТИ ПРОГОНОВ (выучено эволюцией, соблюдай):\n" + "\n".join(rules)) if rules else ""
+
     def compose_llm(self, spec: TaskSpec, shot_desc: str = "") -> dict:
         user = (
             f"ЗАДАНИЕ ЧЕЛОВЕКА: {spec.goal or spec.raw}\n"
@@ -141,6 +153,7 @@ class PromptEngine:
             + (f"\nНАСТРОЕНИЕ: {spec.mood}" if spec.mood else "")
             + (f"\nКАМЕРА: {spec.camera}" if spec.camera else "")
             + (f"\nДВИЖЕНИЕ: {spec.motion}" if spec.motion else "")
+            + self._evolved_rules()
         )
         try:
             raw = self.llm.chat(user, system=self.SYSTEM_PROMPT, json_mode=True)

@@ -1,5 +1,7 @@
 # ПОЛИМАТ-ГЕН 🧠→🎨→👁→✨
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Python](https://img.shields.io/badge/python-3.9%2B-blue)](pyproject.toml) [![Tests](https://img.shields.io/badge/tests-9%2F9%20PASS-brightgreen)](tests/) [![Backends](https://img.shields.io/badge/backends-zai%20%C2%B7%20comfy%20%C2%B7%20a1111%20%C2%B7%20ffmpeg-6C3BFF)](polymath_gen/backends/) [![Evolution](https://img.shields.io/badge/self%20learning-evolve.py-FF8C3B)](polymath_gen/evolve.py)
+
 **Автономный медиа-агент**: человек ставит задание текстом (по-русски) —
 агент сам **планирует кадры → составляет промпты → генерирует изображения и видео →
 критикует себя глазами-VLM → дорабатывает → отдаёт результат**.
@@ -94,6 +96,21 @@ Linux: `scripts/install_local_stack.sh`.
 | `llm/ollama.py` | локально офлайн | Qwen2.5 (мозг) + Qwen2.5-VL (глаза) |
 
 Свой мозг = класс с 4 методами: `.chat() .vision() .available .extract_json()`.
+
+## Самообучение (эволюция)
+
+Агент учится на памяти собственных прогонов:
+
+```bash
+python -m polymath_gen.evolve            # собрал runs/*/state.json -> новые правила кодекса
+python -m polymath_gen.evolve --dry      # только показать, не писать
+```
+
+`evolve.py` находит закономерности в оценках критика («низкие баллы из-за неоранжевого
+света», «туман локализован вместо объёмного») и дописывает выученные правила в
+`prompts/patterns.json` (раздел `meta.evolution_log`). Промпт-движок автоматически
+подхватывает их при следующем прогоне (`_evolved_rules()`). Уже выучено 3 правила:
+`dominant_color_rule`, `atmospheric_layering`, `reflection_quality_specification`.
 
 ## Знания агента
 
