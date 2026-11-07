@@ -1,0 +1,62 @@
+{
+  "started": "20261107_225639",
+  "task": {
+    "raw": "Камера медленно наезжает на ряды серверных стоек в ночном дата-центре, оранжевые индикаторы мерцают, лёгкий туман стелется по полу",
+    "goal": "Камера медленно наезжает на ряды серверных стоек в ночном дата-центре, оранжевые индикаторы мерцают, лёгкий туман стелется по полу",
+    "subject": "",
+    "action": "",
+    "environment": "",
+    "style": "cinematic",
+    "lighting": "",
+    "mood": "",
+    "camera": "",
+    "motion": "",
+    "aspect": "16:9",
+    "mode": "video",
+    "duration": 5,
+    "fps": 30,
+    "audio": false,
+    "negatives": [],
+    "ref_images": []
+  },
+  "steps": [
+    {
+      "video_prompt": {
+        "positive": "Slow dolly-in on rows of server racks in a dark data center at night, orange indicator lights blinking rhythmically, light fog hovering above the floor, volumetric light filtering through the racks, cinematic film still, anamorphic lens, 35mm, film grain, shallow depth of field, dramatic lighting, 16:9 aspect ratio",
+        "negative": "text, watermark, logo, cartoon, illustration, blurry, distorted, deformed, ugly, bad quality, low resolution, compression artifacts, glitch",
+        "layout": [
+          {
+            "block": "Server racks",
+            "bbox": [
+              0.0,
+              0.0,
+              1.0,
+              1.0
+            ],
+            "content": "Multiple rows of black server racks extending into darkness with blinking orange LED lights"
+          },
+          {
+            "block": "Floor fog",
+            "bbox": [
+              0.0,
+              0.8,
+              1.0,
+              0.2
+            ],
+            "content": "Light mist hovering just above the concrete floor"
+          }
+        ],
+        "variants": [
+          "Slow dolly-in through server racks with blinking orange lights in dark data center, atmospheric fog on floor, cinematic lighting",
+          "Tracking shot along server rows with pulsating orange indicators, light fog at floor level, night data center ambiance"
+        ],
+        "notes": "Промпт сфокусирован на движении камеры и ключевых визуальных элементах с акцентом на атмосферу и освещение для создания кинематографического эффекта."
+      },
+      "video": "examples/demo_run/20261107_225639/video.mp4",
+      "seconds": 138.6
+    }
+  ],
+  "outputs": [
+    "examples/demo_run/20261107_225639/video.mp4"
+  ]
+}

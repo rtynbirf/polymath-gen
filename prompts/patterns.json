@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "title": "Паттерны промптинга — distill лучших мировых практик",
+    "sources": [
+      "Reve 2.0 'layout -> render' (наш разбор архива Training Reve 2.0 at scale, см. docs/REVE_METHOD.md)",
+      "OpenAI Sora prompt guide (одна сцена = один промпт, движение камеры, непрерывность)",
+      "Google Veo/Imagen guides (субъект->действие->среда->оптика->стиль)",
+      "Midjourney community best practices (конкретика, свет, --no негативы)",
+      "SDXL/FLUX + ComfyUI community (negative-библиотеки, cfg/steps)",
+      "Terraprompt/awesome-prompt-art своды 2024-2025"
+    ]
+  },
+  "patterns": [
+    {
+      "id": "reve_layout_render",
+      "when": "сложная сцена, много объектов, нужна управляемая композиция",
+      "how": "сначала составь layout: 6-10 зон с bbox в долях кадра и содержимым каждой зоны; затем рендер-промпт, согласующийся со структурой",
+      "template": "[субъект в зоне {main-subject}] + [среда слева/справа] + [фон/небо] + [передний план для глубины] + [источник света] + [атмосфера]"
+    },
+    {
+      "id": "cinematic_still",
+      "when": "фото/кинокадр по умолчанию",
+      "template": "{subject}, {action}, {environment}, {composition: wide/medium/close-up}, {light: volumetric/golden hour/rim}, cinematic film still, anamorphic lens, 35mm, film grain, color graded"
+    },
+    {
+      "id": "sora_like_video",
+      "when": "генеративное видео (z-ai video / Wan 2.2 / LTX-Video)",
+      "template": "{scene description}. {camera movement: slow dolly-in / pan left / tracking shot / static tripod}. {subject motion}. {atmosphere: fog, particles, light shafts}. No cuts, single continuous shot"
+    },
+    {
+      "id": "product_shot",
+      "when": "предметка, реклама",
+      "template": "{product}, studio softbox lighting, seamless {color} background, subtle reflection, commercial render, ultra sharp, centered composition"
+    },
+    {
+      "id": "portrait_studio",
+      "when": "портрет человека",
+      "template": "studio portrait of {subject}, 85mm f/1.4, soft key light + rim, shallow depth of field, natural skin texture, {mood}"
+    },
+    {
+      "id": "negative_core",
+      "when": "SD/ComfyUI/A1111 negative prompt по умолчанию",
+      "template": "text, watermark, signature, logo, jpeg artifacts, worst quality, low quality, blurry, deformed, extra limbs, extra fingers, mutated hands, bad anatomy, duplicate, cropped, out of frame, ugly, lowres"
+    },
+    {
+      "id": "one_idea_rule",
+      "when": "всегда",
+      "how": "один кадр = одна идея; не смешивать 2 сцены; для видео без монтажных склеек в одном промпте"
+    },
+    {
+      "id": "no_text_rule",
+      "when": "если текст в кадре явно не запрошен",
+      "how": "добавлять в negative: text, letters, captions, watermark"
+    },
+    {
+      "id": "camera_language",
+      "when": "кинематографичность",
+      "template": "wide establishing shot | medium shot | close-up | dutch angle | over-the-shoulder | aerial drone view | macro"
+    },
+    {
+      "id": "light_language",
+      "when": "атмосфера",
+      "template": "golden hour | blue hour | volumetric god rays | neon rim light | softbox | hard chiaroscuro | candle light | moonlight"
+    }
+  ]
+}

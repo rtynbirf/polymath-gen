@@ -1,0 +1,140 @@
+{
+  "started": "20261107_225120",
+  "task": {
+    "raw": "Ночной дата-центр: бесконечные ряды стоек с GPU, оранжевая подсветка, лёгкий туман, отражения в тёмном полу, кинематографично",
+    "goal": "Ночной дата-центр: бесконечные ряды стоек с GPU, оранжевая подсветка, лёгкий туман, отражения в тёмном полу, кинематографично",
+    "subject": "",
+    "action": "",
+    "environment": "",
+    "style": "cinematic",
+    "lighting": "",
+    "mood": "",
+    "camera": "",
+    "motion": "",
+    "aspect": "16:9",
+    "mode": "image",
+    "duration": 5,
+    "fps": 30,
+    "audio": false,
+    "negatives": [],
+    "ref_images": []
+  },
+  "steps": [
+    {
+      "shot": 1,
+      "attempt": 1,
+      "prompt": "Vast data center at night, endless rows of GPU server racks with glowing orange LED indicators, light mist floating in the air, dark reflective polished floor showing perfect mirror-like reflections of the racks, cinematic atmosphere, volumetric lighting, 35mm lens, shallow depth of field, dramatic rim lighting, ultra-detailed, photorealistic",
+      "negative": "text, watermark, signature, cartoon, drawing, illustration, painting, blurry, low quality, deformed, distorted, poorly lit, daytime, white lighting",
+      "layout": [
+        {
+          "block": "Server racks",
+          "bbox": [
+            0.0,
+            0.0,
+            1.0,
+            0.7
+          ],
+          "content": "Endless rows of black GPU server racks with glowing orange LED indicators extending into the distance"
+        },
+        {
+          "block": "Floor reflection",
+          "bbox": [
+            0.0,
+            0.3,
+            1.0,
+            0.7
+          ],
+          "content": "Dark reflective polished floor showing perfect mirror-like reflections of the server racks above"
+        },
+        {
+          "block": "Atmospheric mist",
+          "bbox": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "content": "Light mist floating in the air, adding depth and atmosphere to the scene"
+        }
+      ],
+      "image": "examples/demo_run/20261107_225120/shot1_r1.png",
+      "critic": {
+        "score": 5,
+        "ok": false,
+        "problems": [
+          "Туман выглядит как плотное облако дыма в центре коридора, а не лёгкая дымка",
+          "Оранжевая подсветка выражена слабо: доминируют белые/зелёные/красные LED, общей оранжевой атмосферы нет",
+          "Отражения в полу слабые и смазанные, не зеркальные, оранжевые отражения отсутствуют",
+          "Освещение в целом тусклое, кинематографичный объёмный свет почти не читается"
+        ],
+        "fix_hints": [
+          "Заменить 'light mist floating in the air' на 'subtle thin haze, ambient fog' и добавить 'no smoke, no dense cloud'",
+          "Усилить: 'dominant warm orange LED lighting, entire scene bathed in orange glow'",
+          "Добавить 'glossy mirror floor with clear orange reflections of racks'",
+          "Добавить 'warm cinematic color grade, teal-orange contrast, volumetric orange light beams'"
+        ],
+        "reviewer": "zai"
+      },
+      "seconds": 36.5
+    },
+    {
+      "shot": 1,
+      "attempt": 2,
+      "prompt": "Vast data center at night, endless rows of GPU server racks with dominant warm orange LED lighting, entire scene bathed in orange glow, subtle thin haze ambient fog floating in the air, glossy mirror floor with clear orange reflections of racks, warm cinematic color grade, teal-orange contrast, volumetric orange light beams, cinematic atmosphere, 35mm lens, shallow depth of field, dramatic rim lighting, ultra-detailed, photorealistic",
+      "negative": "text, watermark, signature, no smoke, no dense cloud, blurry, low quality, distorted, unrealistic",
+      "layout": [
+        {
+          "block": "Server racks",
+          "bbox": [
+            0.0,
+            0.0,
+            1.0,
+            0.7
+          ],
+          "content": "Endless rows of black GPU server racks with glowing orange LED indicators extending into the distance"
+        },
+        {
+          "block": "Floor reflection",
+          "bbox": [
+            0.0,
+            0.3,
+            1.0,
+            0.7
+          ],
+          "content": "Dark reflective polished floor showing perfect mirror-like reflections of the server racks above"
+        },
+        {
+          "block": "Atmospheric mist",
+          "bbox": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "content": "Light mist floating in the air, adding depth and atmosphere to the scene"
+        }
+      ],
+      "image": "examples/demo_run/20261107_225120/shot1_r2.png",
+      "critic": {
+        "score": 8,
+        "ok": true,
+        "problems": [
+          "Туман локализован у потолка в центре, а не распределён тонкой дымкой по всему объёму",
+          "Отражения на полу скорее влажно-глянцевые с разводами, чем чистые зеркальные, контуры стоек в отражении размыты",
+          "Оранжевая подсветка выражена точечно на стойках; общий объём освещён скорее холодным серо-белым, чем тёплым оранжевым свечением"
+        ],
+        "fix_hints": [
+          "Заменить на 'uniform thin haze filling the entire room, low-lying fog between racks'",
+          "Усилить 'perfect mirror-like floor, sharp crisp reflections of racks' и убрать 'wet floor' эффекты",
+          "Увеличить долю 'dominant warm orange glow filling the whole scene, cool tones suppressed' вместо нейтрального потолочного света"
+        ],
+        "reviewer": "zai"
+      },
+      "seconds": 31.9
+    }
+  ],
+  "outputs": [
+    "examples/demo_run/20261107_225120/shot1_r2.png"
+  ],
+  "finished": "20261107_225248"
+}

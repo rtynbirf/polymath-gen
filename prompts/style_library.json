@@ -1,0 +1,29 @@
+{
+  "meta": {"title": "Библиотека стилей: RU ключ -> EN промпт-блок"},
+  "styles": {
+    "cinematic": "cinematic film still, anamorphic lens, volumetric light, film grain, color graded, 35mm",
+    "photorealistic": "photorealistic, ultra detailed, 8k, natural skin texture, professional photography",
+    "anime": "anime key visual, cel shading, vibrant colors, studio quality",
+    "cyberpunk": "cyberpunk aesthetic, neon rim light, rain-slick reflections, high contrast",
+    "noir": "film noir, black and white, hard shadows, venetian blind light",
+    "product": "product photography, studio softbox lighting, seamless background, commercial render",
+    "portrait": "studio portrait, 85mm lens, soft key light, shallow depth of field",
+    "watercolor": "watercolor painting, soft washes, paper texture",
+    "oil": "oil painting, thick brush strokes, canvas texture, classical",
+    "pixar": "3d render, pixar-style, subsurface scattering, expressive",
+    "pixel": "pixel art, 16-bit, crisp pixels, limited palette",
+    "poster": "graphic design poster, bold composition, flat colors, print-ready",
+    "isometric": "isometric illustration, clean geometry, soft ambient occlusion",
+    "sketch": "pencil sketch, hatching, monochrome, paper grain",
+    "comics": "comic book art, bold ink outlines, halftone shading, dynamic panel",
+    "retro": "1980s retro aesthetic, VHS grain, chromatic aberration, synthwave palette",
+    "soviet_poster": "soviet propaganda poster style, bold shapes, limited palette, constructivism",
+    "dark_fantasy": "dark fantasy, grim atmosphere, desaturated palette, intricate details",
+    "dreamcore": "surreal dreamlike scene, soft focus, pastel haze, impossible geometry",
+    "documentary": "documentary photography, candid moment, available light, natural colors",
+    "macro": "extreme macro shot, razor-thin depth of field, dew details",
+    "aerial": "aerial drone shot, top-down perspective, golden hour shadows",
+    "voxel": "voxel art, magicavoxel style, clean cubes, soft global illumination",
+    "blueprint": "technical blueprint, white lines on blue, schematic precision"
+  }
+}

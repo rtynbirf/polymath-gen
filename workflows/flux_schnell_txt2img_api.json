@@ -1,0 +1,15 @@
+{
+  "_comment": "FLUX.1-schnell txt2img (4 шага, euler, cfg=1), API-формат ComfyUI. Требует: models/unet/flux1-schnell-fp8.safetensors, models/vae/ae.safetensors, models/text_encoders/t5xxl_fp8_e4m3fn.safetensors, models/clip/clip_l.safetensors. Скелет по официальному шаблону ComfyUI 'Flux Schnell'.",
+  "6": {"class_type": "UNETLoader", "inputs": {"unet_name": "flux1-schnell-fp8.safetensors", "weight_dtype": "fp8_e4m3fn"}},
+  "10": {"class_type": "VAELoader", "inputs": {"vae_name": "ae.safetensors"}},
+  "11": {"class_type": "DualCLIPLoader", "inputs": {"clip_name1": "t5xxl_fp8_e4m3fn.safetensors", "clip_name2": "clip_l.safetensors", "type": "flux"}},
+  "12": {"class_type": "CLIPTextEncode", "inputs": {"clip": ["11", 0], "text": "{{POSITIVE}}"}},
+  "26": {"class_type": "CLIPTextEncode", "inputs": {"clip": ["11", 0], "text": "{{NEGATIVE}}"}},
+  "27": {"class_type": "BasicScheduler", "inputs": {"model": ["6", 0], "steps": 4, "beta_schedule": "simple", "denoise": 1.0}},
+  "28": {"class_type": "RandomNoise", "inputs": {"noise_seed": "{{SEED}}"}},
+  "30": {"class_type": "KSamplerSelect", "inputs": {"sampler_name": "euler"}},
+  "31": {"class_type": "SamplerCustom", "inputs": {"model": ["6", 0], "add_noise": true, "noise_generator": ["28", 0], "cfg": 1.0, "positive": ["12", 0], "negative": ["26", 0], "sampler": ["30", 0], "sigmas": ["27", 0], "latent_image": ["33", 0]}},
+  "33": {"class_type": "EmptySD3LatentImage", "inputs": {"width": "{{W}}", "height": "{{H}}", "batch_size": 1}},
+  "8": {"class_type": "VAEDecode", "inputs": {"samples": ["31", 0], "vae": ["10", 0]}},
+  "9": {"class_type": "SaveImage", "inputs": {"filename_prefix": "polymath_flux", "images": ["8", 0]}}
+}

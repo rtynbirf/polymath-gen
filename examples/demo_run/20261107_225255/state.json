@@ -1,0 +1,324 @@
+{
+  "started": "20261107_225255",
+  "task": {
+    "raw": "Инженер-полимат запускает автономный ИИ-агент в штаб-квартире на закате",
+    "goal": "Инженер-полимат запускает автономный ИИ-агент в штаб-квартире на закате",
+    "subject": "",
+    "action": "",
+    "environment": "",
+    "style": "cinematic",
+    "lighting": "",
+    "mood": "",
+    "camera": "",
+    "motion": "",
+    "aspect": "16:9",
+    "mode": "storyboard",
+    "duration": 5,
+    "fps": 30,
+    "audio": false,
+    "negatives": [],
+    "ref_images": []
+  },
+  "steps": [
+    {
+      "shot": 1,
+      "attempt": 1,
+      "prompt": "A polymath engineer in a futuristic control room, initiating an autonomous AI agent during golden hour. Wide shot, establishing shot of the headquarters. Cinematic film still, anamorphic, 35mm lens, warm sunset light streaming through large windows, volumetric rays, rim light on the engineer's silhouette, film grain. The engineer stands confidently, hand on a holographic interface panel, activating the AI system.",
+      "negative": "text, watermark, signature, cartoon, drawing, illustration, blurry, low quality, deformed, bad anatomy, extra limbs, poorly drawn face, mutation, mutated, extra finger, poorly drawn hands, missing limb, floating limbs, disconnected limbs, malformed hands, blurry, ((((mutated hands and fingers)))), distorted, out of focus, long body, ((((ugly)))), ((((duplicate)))), morbid, mutilated, extra fingers, mutated hands, poorly drawn eyes, multiple horses",
+      "layout": [
+        {
+          "block": "Window",
+          "bbox": [
+            0.0,
+            0.0,
+            1.0,
+            0.6
+          ],
+          "content": "Large panoramic window with golden hour sunset view"
+        },
+        {
+          "block": "Engineer",
+          "bbox": [
+            0.3,
+            0.4,
+            0.2,
+            0.5
+          ],
+          "content": "Polymath engineer in silhouette, hand on holographic interface"
+        },
+        {
+          "block": "Control Panel",
+          "bbox": [
+            0.25,
+            0.5,
+            0.3,
+            0.3
+          ],
+          "content": "Futuristic holographic control panel with active interface"
+        },
+        {
+          "block": "AI Agent",
+          "bbox": [
+            0.6,
+            0.5,
+            0.2,
+            0.3
+          ],
+          "content": "Glowing AI agent activation sequence"
+        },
+        {
+          "block": "Room Interior",
+          "bbox": [
+            0.0,
+            0.6,
+            1.0,
+            0.4
+          ],
+          "content": "Futuristic control room interior with advanced technology"
+        }
+      ],
+      "image": "examples/demo_run/20261107_225255/shot1_r1.png",
+      "critic": {
+        "score": 7,
+        "ok": true,
+        "problems": [
+          "Кадр средний план, а не широкий establishing shot штаб-квартиры, как требовалось",
+          "На голограмме читаются псевдо-текстовые блоки и мелкие UI-надписи (не запрашивались)",
+          "Рука/плечо инженера в левом нижнем углу обрезаны рамкой",
+          "Голограмма скорее холодно-голубая, конфликтует с тёплым sunset-освещением, rim light слабый"
+        ],
+        "fix_hints": [
+          "Заменить 'wide shot, establishing shot' на точное описание масштаба, если нужен герой крупно, либо добавить 'full body, entire control room visible'",
+          "Добавить в негативный промпт: 'text, letters, readable UI labels, pseudo-text'",
+          "Уточнить позу: 'arm fully in frame, no cropped limbs'",
+          "Усилить: 'warm golden rim light on silhouette, hologram tinted amber-orange'"
+        ],
+        "reviewer": "zai"
+      },
+      "seconds": 58.4
+    },
+    {
+      "shot": 2,
+      "attempt": 1,
+      "prompt": "A polymath engineer in a futuristic control room, activating an autonomous AI agent, medium shot, golden hour light streaming through large windows, holographic interfaces glowing, cinematic film still, anamorphic lens, 35mm, shallow depth of field, volumetric light, rim lighting on the engineer, dramatic atmosphere, 16:9 aspect ratio",
+      "negative": "text, watermark, signature, blurry, deformed, low quality, cartoon, drawing, illustration, painting, 3d render, cgi, unrealistic, extra limbs, distorted face",
+      "layout": [
+        {
+          "block": "window",
+          "bbox": [
+            0.0,
+            0.0,
+            0.3,
+            1.0
+          ],
+          "content": "large panoramic window with sunset view"
+        },
+        {
+          "block": "engineer",
+          "bbox": [
+            0.25,
+            0.2,
+            0.4,
+            0.6
+          ],
+          "content": "polymath engineer in futuristic attire, activating holographic interface"
+        },
+        {
+          "block": "ai_agent",
+          "bbox": [
+            0.6,
+            0.3,
+            0.3,
+            0.4
+          ],
+          "content": "glowing autonomous AI agent with light particles"
+        },
+        {
+          "block": "control_panel",
+          "bbox": [
+            0.2,
+            0.7,
+            0.6,
+            0.2
+          ],
+          "content": "holographic control interface with data streams"
+        }
+      ],
+      "image": "examples/demo_run/20261107_225255/shot2_r1.png",
+      "critic": {
+        "score": 7,
+        "ok": true,
+        "problems": [
+          "Свет скорее нейтральный холодный, тёплый золотой свет заката не проявлен на инженере и интерьере (rim light слабый)",
+          "Голографические интерфейсы с мелким псевдотекстом местами размыты и читаются как артефакты",
+          "Штаб-квартира читается скорее как космический корабль, чем штаб-квартира",
+          "Анатомия рук в порядке, но поза левой руки с обрезанными пальцами у края кадра выглядит неестественно"
+        ],
+        "fix_hints": [
+          "Усилить golden hour: добавить 'warm golden sunlight washing over the engineer, strong orange rim lighting'",
+          "Заменить размытые интерфейсы на 'crisp clean holographic UI panels without readable text'",
+          "Уточнить локацию: 'high-tech corporate headquarters control room' вместо футуристичного космоса",
+          "Добавить 'hands fully visible, natural pose' для корректной постановки рук"
+        ],
+        "reviewer": "zai"
+      },
+      "seconds": 46.6
+    },
+    {
+      "shot": 3,
+      "attempt": 1,
+      "prompt": "A close-up cinematic shot of a polymath engineer launching an autonomous AI agent in a high-tech headquarters at sunset. The engineer's focused face is illuminated by the warm golden hour light streaming through large windows, casting long dramatic shadows. In the foreground, the engineer's hands interact with a holographic interface, while the AI agent materializes as a glowing orb of light. The composition uses a shallow depth of field with an 85mm lens, creating a bokeh effect of the futuristic office in the background. The scene is bathed in volumetric golden hour light with rim lighting on the engineer's silhouette. Style: cinematic film still, anamorphic, 35mm, film grain.",
+      "negative": "text, watermark, signature, cartoon, illustration, drawing, painting, blurry, deformed, distorted, extra limbs, extra fingers, poorly drawn face, mutation, ugly, disfigured, malformed, mutated, extra limbs, poorly drawn hands, missing fingers, extra fingers, fused fingers, too many fingers, long neck, long body, extra head, poorly drawn eyes, multiple AI agents, daytime, bright lighting",
+      "layout": [
+        {
+          "block": "Engineer's Face",
+          "bbox": [
+            0.25,
+            0.2,
+            0.5,
+            0.4
+          ],
+          "content": "Close-up of polymath engineer's face showing intense focus and determination"
+        },
+        {
+          "block": "Hands and Interface",
+          "bbox": [
+            0.2,
+            0.5,
+            0.6,
+            0.3
+          ],
+          "content": "Engineer's hands interacting with holographic interface, glowing blue light"
+        },
+        {
+          "block": "AI Agent",
+          "bbox": [
+            0.7,
+            0.4,
+            0.2,
+            0.2
+          ],
+          "content": "Glowing orb of light representing the AI agent materializing"
+        },
+        {
+          "block": "Window Background",
+          "bbox": [
+            0.0,
+            0.0,
+            1.0,
+            0.6
+          ],
+          "content": "Large windows with dramatic sunset view casting golden light"
+        },
+        {
+          "block": "Office Elements",
+          "bbox": [
+            0.0,
+            0.6,
+            1.0,
+            0.4
+          ],
+          "content": "Blurred futuristic office elements with bokeh effect"
+        }
+      ],
+      "image": "examples/demo_run/20261107_225255/shot3_r1.png",
+      "critic": {
+        "score": 7,
+        "ok": true,
+        "problems": [
+          "ИИ-агент изображён как голографический мозг в голове, а не светящаяся сфера, как в промпте",
+          "Кадр скорее средний план, чем крупный (close-up), руки и голографический интерфейс частично вне фокуса композиции",
+          "Смартфон на столе выглядит слегка парящим/нестыкуемым с поверхностью",
+          "Мелкий нечитаемый текст на голографическом интерфейсе (псевдо-символы)",
+          "Свет заката выражен слабо; тёплый rim-light на силуэте инженера почти отсутствует"
+        ],
+        "fix_hints": [
+          "Заменить 'AI agent materializes as a glowing orb of light' — сгенерировать именно светящуюся сферу рядом с руками",
+          "Усилить close-up: 'tight close-up on face and hands, hands with holographic interface in sharp focus in foreground'",
+          "Добавить 'strong golden rim lighting on engineer's silhouette, long dramatic shadows'",
+          "Убрать телефон: 'no extra devices on desk'",
+          "Добавить 'holographic UI without any readable text, abstract glyphs only'"
+        ],
+        "reviewer": "zai"
+      },
+      "seconds": 32.2
+    },
+    {
+      "shot": 4,
+      "attempt": 1,
+      "prompt": "A polymath engineer in a futuristic control room launches an autonomous AI agent, holographic interface displays swirling with data, golden hour sunlight streams through large windows casting long shadows, dramatic rim light on the engineer's face, cinematic composition, 16:9 aspect ratio, film still, anamorphic lens flare, shallow depth of field, volumetric lighting, high-tech control panels with subtle glowing elements",
+      "negative": "text, watermark, signature, blurry, low quality, cartoon, drawing, illustration, deformed hands, extra limbs, bad anatomy, distorted face",
+      "layout": [
+        {
+          "block": "Engineer",
+          "bbox": [
+            0.3,
+            0.2,
+            0.4,
+            0.6
+          ],
+          "content": "Polymath engineer in futuristic attire, focused expression, hand extended toward holographic interface"
+        },
+        {
+          "block": "Holographic Interface",
+          "bbox": [
+            0.6,
+            0.3,
+            0.35,
+            0.4
+          ],
+          "content": "Swirling blue and purple holographic data streams forming complex patterns"
+        },
+        {
+          "block": "Control Panel",
+          "bbox": [
+            0.1,
+            0.6,
+            0.8,
+            0.3
+          ],
+          "content": "High-tech control surfaces with glowing buttons and readouts"
+        },
+        {
+          "block": "Window",
+          "bbox": [
+            0.0,
+            0.0,
+            1.0,
+            0.4
+          ],
+          "content": "Large panoramic window showing sunset sky with warm orange and purple hues"
+        }
+      ],
+      "image": "examples/demo_run/20261107_225255/shot4_r1.png",
+      "critic": {
+        "score": 7,
+        "ok": true,
+        "problems": [
+          "Текст-в-кадре: мелкие псевдо-надписи на голограммах/мониторах отсутствуют как читаемый текст, но часть надписей не в фокусе — допустимо, однако риск мелкого мусорного текста на дашбордах",
+          "Драматический rim light на лице инженера практически не выражен — лицо освещено ровно, контровой свет слабый",
+          "Futuristic control room скорее обычный современный офис с мониторами, чем футуристический; панелей управления с подсветкой мало",
+          "Композиция 16:9 с обрезанным справа элементом (голограмма/монитор у края кадра)",
+          "Голографический интерфейс один, а не множественные swirling data displays"
+        ],
+        "fix_hints": [
+          "Добавить в промпт: 'no readable text on screens, abstract UI glyphs only' и 'clean crop, subject fully in frame'",
+          "Усилить: 'strong golden rim light on face edge, backlit by sunset' ",
+          "Заменить офис на 'sleek futuristic command center with curved holographic control panels' ",
+          "Добавить 'multiple floating holographic displays swirling with data streams around the engineer'"
+        ],
+        "reviewer": "zai"
+      },
+      "seconds": 28.9
+    }
+  ],
+  "outputs": [
+    "examples/demo_run/20261107_225255/storyboard.mp4",
+    "examples/demo_run/20261107_225255/contact_sheet.png",
+    "examples/demo_run/20261107_225255/shot1_r1.png",
+    "examples/demo_run/20261107_225255/shot2_r1.png",
+    "examples/demo_run/20261107_225255/shot3_r1.png",
+    "examples/demo_run/20261107_225255/shot4_r1.png"
+  ],
+  "finished": "20261107_225639"
+}
