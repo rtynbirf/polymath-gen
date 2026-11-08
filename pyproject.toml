@@ -17,3 +17,6 @@ dependencies = [
 
 [project.scripts]
 polymath-gen = "polymath_gen.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["polymath_gen*"]
