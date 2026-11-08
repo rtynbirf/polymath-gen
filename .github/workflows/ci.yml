@@ -1,0 +1,29 @@
+name: ci
+
+# CI ПОЛИМАТ-ГЕН (волна 2026-11-08, W-AUD-11): установка пакета и тесты.
+# Требование канона: код LLM-агента без прогона не считается выполненным.
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: test — pip install -e . + pytest
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: "3.11"
+      - name: установка пакета
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .
+      - name: тесты
+        run: pytest tests/ -v
