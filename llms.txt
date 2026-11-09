@@ -34,3 +34,4 @@
 - [GitHub](https://github.com/rtynbirf/polymath-gen)
 - [README](https://github.com/rtynbirf/polymath-gen/blob/main/README.md)
 - [raw llms.txt](https://raw.githubusercontent.com/rtynbirf/polymath-gen/main/llms.txt)
+- [PULSE.md](PULSE.md): живой пульс репозитория — прогоны, пломбы, здоровье.
