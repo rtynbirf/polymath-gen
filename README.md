@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="banner.png" alt="polymath-gen — Автономный медиа-агент: задание человека → продукт" width="100%">
+</div>
+
 # ПОЛИМАТ-ГЕН 🧠→🎨→👁→✨
 
 <p align="center"><img src=".github/social-preview.png" alt="polymath-gen" width="100%"></p>
