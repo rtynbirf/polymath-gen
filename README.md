@@ -1,5 +1,8 @@
 <div align="center">
+  <picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/forge-banner-polymath-gen.svg" />
   <img src="banner.png" alt="polymath-gen — Автономный медиа-агент: задание человека → продукт" width="100%">
+</picture>
 </div>
 
 # ПОЛИМАТ-ГЕН 🧠→🎨→👁→✨
