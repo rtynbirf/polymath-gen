@@ -1,21 +1,21 @@
 <div align="center">
   <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/forge-banner-polymath-gen.svg" />
-  <img src="banner.png" alt="polymath-gen — Автономный медиа-агент: задание человека → продукт" width="100%">
+  <img src="https://cdn.jsdelivr.net/gh/rtynbirf/polymath-gen@main/banner.png" alt="polymath-gen — Автономный медиа-агент: задание человека → продукт" width="100%">
 </picture>
 </div>
 
 <!--ФОРЖ:МУЗА:НАЧАЛО-->
 <div align="center">
-  <img src="repo-muse.svg" width="100%" alt="Муза polymath-gen: мастерская ЛОЗА ГЕНАРАЦИЙ, кузня ПОЛИМАТ, раунд 12 · REVE=РЕВО" />
+  <img src="https://cdn.jsdelivr.net/gh/rtynbirf/polymath-gen@main/repo-muse.svg" width="100%" alt="Муза polymath-gen: мастерская ЛОЗА ГЕНАРАЦИЙ, кузня ПОЛИМАТ, раунд 12 · REVE=РЕВО" />
   <br/>
-  <img src="forge-divider.svg" width="62%" alt="делитель мастерской ЛОЗА ГЕНАРАЦИЙ" />
+  <img src="https://cdn.jsdelivr.net/gh/rtynbirf/polymath-gen@main/forge-divider.svg" width="62%" alt="делитель мастерской ЛОЗА ГЕНАРАЦИЙ" />
 </div>
 <!--ФОРЖ:МУЗА:КОНЕЦ-->
 
 <!--ФОРЖ:ПАСПОРТ:НАЧАЛО-->
 <div align="center">
-  <img src="revo-page.svg" width="100%" alt="РЕВО-паспорт страницы polymath-gen: строение файлов, лексикон, числа — по фактическому контенту" />
+  <img src="https://cdn.jsdelivr.net/gh/rtynbirf/polymath-gen@main/revo-page.svg" width="100%" alt="РЕВО-паспорт страницы polymath-gen: строение файлов, лексикон, числа — по фактическому контенту" />
 </div>
 
 | ФАЙЛОВ | ПАПОК | КОММИТОВ | ОБНОВЛЕНО | РЕЛИЗОВ |
@@ -27,7 +27,7 @@
 
 # ПОЛИМАТ-ГЕН 🧠→🎨→👁→✨
 
-<p align="center"><img src=".github/social-preview.png" alt="polymath-gen" width="100%"></p>
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/rtynbirf/polymath-gen@main/.github/social-preview.png" alt="polymath-gen" width="100%"></p>
 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Python](https://img.shields.io/badge/python-3.9%2B-blue)](pyproject.toml) [![Tests](https://img.shields.io/badge/tests-9%2F9%20PASS-brightgreen)](tests/) [![Backends](https://img.shields.io/badge/backends-zai%20%C2%B7%20comfy%20%C2%B7%20a1111%20%C2%B7%20ffmpeg-6C3BFF)](polymath_gen/backends/) [![Evolution](https://img.shields.io/badge/self%20learning-evolve.py-FF8C3B)](polymath_gen/evolve.py)
