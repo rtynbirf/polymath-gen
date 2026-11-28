@@ -1,8 +1,7 @@
 <div align="center">
-  <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/forge-banner-polymath-gen.svg" />
-  <img src="https://cdn.jsdelivr.net/gh/rtynbirf/polymath-gen@main/banner.png" alt="polymath-gen — Автономный медиа-агент: задание человека → продукт" width="100%">
-</picture>
+
+<a href="https://github.com/rtynbirf/polymath-gen"><img src="banner.png" width="100%" alt="polymath-gen — штандарт мастерской в каноне ORNAMENTAL MYTHO-REALISM"></a>
+
 </div>
 
 <!--ФОРЖ:МУЗА:НАЧАЛО-->
@@ -15,13 +14,26 @@
 
 <!--ФОРЖ:ПАСПОРТ:НАЧАЛО-->
 <div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/rtynbirf/polymath-gen@main/revo-page.svg" width="100%" alt="РЕВО-паспорт страницы polymath-gen: строение файлов, лексикон, числа — по фактическому контенту" />
+  <img src="revo-page.svg" width="100%" alt="РЕВО-паспорт страницы polymath-gen №43 в каноне ORNAMENTAL MYTHO-REALISM: орнаментальная решётка, медальон-миф, строение файлов, лексикон — по фактическому контенту" />
 </div>
 
 | ФАЙЛОВ | ПАПОК | КОММИТОВ | ОБНОВЛЕНО | РЕЛИЗОВ |
 |---:|---:|---:|---|---:|
-| 91 | 20 | 47 | 2026-11-16 | 1 |
+| 101 | 23 | 1 | 2026-11-28 | 1 |
 <!--ФОРЖ:ПАСПОРТ:КОНЕЦ-->
+
+# polymath-gen
+
+<div align="center">
+  <picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/forge-banner-polymath-gen.svg" />
+  <img src="https://cdn.jsdelivr.net/gh/rtynbirf/polymath-gen@main/banner.png" alt="polymath-gen — Автономный медиа-агент: задание человека → продукт" width="100%">
+</picture>
+</div>
+
+
+
+
 
 
 
