@@ -25,6 +25,18 @@
 # polymath-gen
 
 <div align="center">
+
+<a href="https://github.com/rtynbirf/polymath-gen"><img src="banner.png" width="100%" alt="polymath-gen — штандарт мастерской в каноне ORNAMENTAL MYTHO-REALISM"></a>
+
+</div>
+
+
+
+
+
+# polymath-gen
+
+<div align="center">
   <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/forge-banner-polymath-gen.svg" />
   <img src="https://cdn.jsdelivr.net/gh/rtynbirf/polymath-gen@main/banner.png" alt="polymath-gen — Автономный медиа-агент: задание человека → продукт" width="100%">
